@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:textSize="20sp"
+        android:hint="@string/app_name"
+        android:id="@+id/name_restaurant_tv"
+        android:layout_height="match_parent" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/shape_corner_black"
+        android:text="@string/reserver_seat"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:id="@+id/reserver_bt"
+
+        android:layout_height="match_parent" />
+</LinearLayout>

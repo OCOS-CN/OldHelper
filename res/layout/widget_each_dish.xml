@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dish_each_ll"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:background="@drawable/shape_corner"
+    android:layout_height="300dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_height="3dp" />
+    <ImageView
+        android:id="@+id/dish_iv"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:scaleType="centerCrop"
+        android:src="@drawable/old_restaurant"
+        android:layout_height="0dp" />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/shape_corner_squary"
+        android:hint="@string/dish_name"
+        android:id="@+id/dish_name_tv"
+        android:layout_marginBottom="10dp"
+         />
+    <Button
+
+        android:id="@+id/dish_reserve_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+
+        android:background="@drawable/shape_corner_black"
+        android:text="@string/reserver_seat"
+         />
+
+</LinearLayout>

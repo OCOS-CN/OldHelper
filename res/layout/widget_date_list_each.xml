@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/date_each_tv"
+        android:layout_width="match_parent"
+        android:hint="@string/historical_list"
+        android:layout_gravity="center"
+        android:textStyle="italic|bold"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:layout_height="match_parent" />
+</LinearLayout>

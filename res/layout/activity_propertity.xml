@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.qingluan.darkh.oldhelper.Activities.PropertityActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:columnCount="3"
+                android:layout_height="match_parent">
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="40px"
+                    app:iconSrc="@drawable/clearn"
+                    app:text="@string/clean_service"
+                    ></com.qingluan.darkh.oldhelper.components.MoudleView>
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    android:layout_width="300dp"
+                    android:layout_marginLeft="40px"
+                    android:layout_height="400dp"
+                    app:iconSrc="@drawable/maintenace"
+                    app:text="@string/maintenance"
+                    ></com.qingluan.darkh.oldhelper.components.MoudleView>
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="40px"
+                    app:iconSrc="@drawable/hospital_reserve"
+                    app:text="@string/reserver_seat"
+                    ></com.qingluan.darkh.oldhelper.components.MoudleView>
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    android:layout_width="300dp"
+                    android:layout_height="400dp"
+                    android:layout_marginLeft="40px"
+                    app:iconSrc="@drawable/attach_with"
+                    app:text="@string/out_attack"
+                    ></com.qingluan.darkh.oldhelper.components.MoudleView>
+
+            </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,486 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<LinearLayout
+    android:id="@+id/main_content_ll"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.qingluan.darkh.oldhelper.Activities.MainActivity">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical"
+
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/peroson_info_iv"
+            android:layout_weight="3"
+            android:src="@drawable/oldman"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/shape_corner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+        <ListView
+            android:id="@+id/peroson_info_ll"
+            android:layout_weight="3"
+            android:background="@drawable/shape_corner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+        <LinearLayout
+            android:id="@+id/today_ll"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical"
+            android:layout_height="0dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_corner"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_left_blue"
+                    android:padding="4dp"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:gravity="center|center_vertical"
+                        android:hint="今日步行"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                       android:layout_width="0dp"
+                       android:layout_weight="7"
+                        android:layout_gravity="center"
+                       android:text=":1000m"
+                       android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_corner"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shepe_left_green"
+                    android:padding="4dp"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:hint="今日服药"
+                    android:gravity="center|center_vertical"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:text=":4 mg"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_corner"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_height="0dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_left_orange"
+                    android:padding="4dp"
+                    android:layout_height="fill_parent">
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_gravity="center"
+                    android:hint="今日饮食"
+                    android:gravity="center|center_vertical"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:text="小米粥 青菜"
+                    android:layout_gravity="center"
+                    android:gravity="center|center_vertical"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    <ScrollView
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <GridLayout
+                android:id="@+id/moudle_grid_layout"
+                android:layout_width="match_parent"
+                android:columnCount="3"
+                android:layout_height="match_parent">
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    xmlns:custom="http://schemas.android.com/apk/res/com.qingluan.darkh.oldhelper"
+                    android:id="@+id/fmaily_info_ibt"
+                    android:layout_height="400dp"
+                    android:layout_width="300dp"
+                    app:text="@string/family_member"
+                    app:iconSrc="@drawable/fam"
+                    />
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    android:id="@+id/health_ibt"
+                    android:layout_height="400dp"
+                    android:layout_width="300dp"
+                    app:iconSrc="@drawable/health"
+                    app:text="@string/monitor"
+
+                    />
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    android:id="@+id/synthesize_iv"
+                    android:layout_height="400dp"
+                    android:layout_width="300dp"
+                    app:iconSrc="@drawable/fam_service"
+                    app:text="@string/famService"
+                    />
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    android:id="@+id/old_restaurant_turn_tv"
+                    android:layout_height="400dp"
+                    android:layout_width="300dp"
+                    app:iconSrc="@drawable/old_restaurant"
+                    app:text="@string/reserve_food"
+                    />
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    android:id="@+id/locate_iv"
+                    android:layout_height="400dp"
+                    android:layout_width="300dp"
+                    app:iconSrc="@drawable/locate_p"
+                    app:text="@string/locate_bt"
+                    />
+
+
+
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    xmlns:custom="http://schemas.android.com/apk/res/com.qingluan.darkh.oldhelper"
+                    android:id="@+id/call_taxi_iv"
+                    android:layout_height="400dp"
+                    android:layout_width="300dp"
+                    app:iconSrc="@drawable/taxi_call"
+                    app:text="@string/call_taxi"
+
+
+                    />
+
+                <com.qingluan.darkh.oldhelper.components.MoudleView
+                    xmlns:custom="http://schemas.android.com/apk/res/com.qingluan.darkh.oldhelper"
+                    android:id="@+id/health_way_iv"
+                    android:layout_height="400dp"
+                    android:layout_width="300dp"
+                    app:text="@string/liberary"
+                    app:iconSrc="@drawable/health_info_p"
+
+
+                    />
+
+
+            </GridLayout>
+        </LinearLayout>
+
+        </ScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:layout_weight="4"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!---->
+            <!--android:orientation="vertical"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_weight="5"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_height="0dp">-->
+                <!--<LinearLayout-->
+
+                    <!--android:gravity="center"-->
+                    <!--android:layout_margin="25dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:background="@drawable/shape_corner"-->
+                    <!--android:orientation="vertical"-->
+                    <!-->-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/fmaily_info_ibt"-->
+                        <!--android:padding="1dp"-->
+                        <!--android:layout_weight="8"-->
+                        <!--android:layout_margin="1dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:text="some"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:hint="@string/family_member"-->
+                        <!--android:layout_height="0dp" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_margin="25dp"-->
+                    <!--android:background="@drawable/shape_corner"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:orientation="vertical"-->
+                    <!-->-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/health_ibt"-->
+                        <!--android:padding="1dp"-->
+                        <!--android:layout_weight="8"-->
+                        <!--android:layout_margin="1dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@drawable/health"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:text="some"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:hint="@string/monitor"-->
+                        <!--android:layout_height="0dp" />-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+
+                    <!--android:layout_margin="25dp"-->
+                    <!--android:background="@drawable/shape_corner"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:orientation="vertical">-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/synthesize_iv"-->
+                        <!--android:padding="1dp"-->
+                        <!--android:layout_weight="8"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:src="@drawable/service"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/synthesize"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:hint="@string/synthesizeService"-->
+                        <!--android:layout_height="0dp" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_weight="5"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_height="0dp">-->
+                <!--<LinearLayout-->
+                    <!--android:layout_margin="25dp"-->
+                    <!--android:background="@drawable/shape_corner"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:orientation="vertical"-->
+                    <!-->-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/locate_iv"-->
+                        <!--android:padding="10dp"-->
+                        <!--android:layout_weight="8"-->
+                        <!--android:layout_margin="5dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:src="@drawable/taxi_call"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:text="some"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:hint="@string/locate_bt"-->
+                        <!--android:layout_height="0dp" />-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_margin="25dp"-->
+                    <!--android:background="@drawable/shape_corner"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="3"-->
+                    <!-->-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/old_restaurant_turn_tv"-->
+                        <!--android:padding="1dp"-->
+                        <!--android:layout_weight="8"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:src="@drawable/old_restaurant"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:hint="@string/oldRestaurant"-->
+                        <!--android:layout_height="0dp" />-->
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_margin="25dp"-->
+                    <!--android:background="@drawable/shape_corner"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="3"-->
+                    <!-->-->
+                    <!--<ImageView-->
+                        <!--android:id="@+id/health_iv"-->
+                        <!--android:padding="1dp"-->
+                        <!--android:layout_weight="8"-->
+                        <!--android:layout_margin="10dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:layout_height="0dp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:src="@drawable/health_info_p"-->
+                        <!--/>-->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_weight="2"-->
+                        <!--android:textSize="25sp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:gravity="center_horizontal"-->
+                        <!--android:hint="@string/liberary"-->
+                        <!--android:layout_height="0dp" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_height="200dp">
+        <Button
+            android:id="@+id/call_menu_bt"
+            android:layout_width="100dp"
+            android:hint="@string/call_bt"
+            android:textAllCaps="true"
+            android:alpha="0.6"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_left_blue"
+            android:layout_centerVertical="true"
+            android:layout_height="200dp" />
+        <LinearLayout
+            android:id="@+id/contetn_call_pa_ll"
+            android:orientation="vertical"
+            android:background="@color/whitesmoke"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/contetn_call_ll"
+                    android:orientation="vertical" android:layout_width="10dp"
+                    android:layout_height="match_parent">
+
+                    <ListView
+                        android:id="@+id/urgency_contact_lv"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="match_parent"></ListView>
+                </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_height="150dp">-->
+        <!--<Button-->
+            <!--android:id="@+id/locate_menu_bt"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:hint="@string/locate_bt"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:alpha="0.6"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@drawable/shape_left_orange"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:onClick="toLocateEvent"-->
+            <!--android:layout_height="150dp" />-->
+
+
+    <!--</LinearLayout>-->
+</RelativeLayout>

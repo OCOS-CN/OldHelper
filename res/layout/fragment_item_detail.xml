@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fmaily_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/family_iv"
+            android:layout_weight="5"
+            android:padding="35dp"
+            android:layout_margin="30dp"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/family_name"
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/fam_name"
+                android:textIsSelectable="true" >
+            </TextView>
+            <TextView
+                android:id="@+id/family_rela_tv"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/fam_rela"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/family_contact_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="@string/fam_contact"
+                android:textIsSelectable="true" >
+            </TextView>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:layout_margin="25dp"
+        android:background="@drawable/shape_corner"
+        android:padding="35dp"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:hint="@string/fam_other_contact"
+            android:layout_height="0dp" />
+        <ListView
+            android:id="@+id/other_contact_lv"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="0dp"></ListView>
+    </LinearLayout>
+        <!--tools:context="com.qingluan.darkh.oldhelper.Activities.ItemDetailFragment" -->
+
+
+</LinearLayout>

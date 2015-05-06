@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contetn_call_ll"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/label_tv"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:hint="label"
+        android:gravity="center"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/call_tv"
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_margin="10dp"
+        android:hint="@string/call_number"
+        android:textSize="30sp"
+        android:background="@drawable/shape_corner"
+        android:gravity="center_horizontal|center"
+        android:layout_height="wrap_content" />
+</LinearLayout>

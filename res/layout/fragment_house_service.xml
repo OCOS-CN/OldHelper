@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/housemaid"
+            android:layout_width="200dp"
+            android:hint="@string/housemaid"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_spheral_orange"
+            android:layout_height="200dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/cleaner"
+            android:layout_width="200dp"
+            android:hint="@string/cleaner"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_spheral_orange"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/pay_hours"
+            android:layout_width="200dp"
+            android:hint="@string/pay_hours"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_spheral_orange"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/attacher"
+            android:layout_width="200dp"
+            android:hint="@string/attacher"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_spheral_orange"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

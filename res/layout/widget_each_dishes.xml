@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.qingluan.darkh.oldhelper.Activities.OldRestaurantTabActivity$PlaceholderFragment">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <GridLayout
+                android:id="@+id/grid_layout"
+                android:layout_width="match_parent"
+                android:columnCount="5"
+
+                android:layout_height="match_parent">
+
+            </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+    <!--<GridView-->
+        <!--android:id="@+id/grid_gl"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:numColumns="auto_fit"-->
+        <!--android:columnWidth="220dp"-->
+        <!--android:isScrollContainer="true"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:nestedScrollingEnabled="true">-->
+
+        <!--</GridView>-->
+
+</RelativeLayout>
